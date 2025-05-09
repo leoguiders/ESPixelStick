@@ -117,18 +117,18 @@ Collaboration diagram for c_InputMgr:</div>
 <div class="dyncontent">
 <div class="center"><img src="classc___input_mgr__coll__graph.png" border="0" usemap="#ac___input_mgr_coll__map" alt="Collaboration graph"/></div>
 <map name="ac___input_mgr_coll__map" id="ac___input_mgr_coll__map">
-<area shape="rect" title="forward declaration to the pure virtual Input class that will be defined later." alt="" coords="182,183,268,208"/>
-<area shape="rect" href="structc___input_mgr_1_1_driver_info__t.html" title=" " alt="" coords="5,94,165,120"/>
-<area shape="poly" title=" " alt="" coords="82,135,84,147,88,157,102,166,126,175,182,186,181,191,124,180,100,171,84,160,78,148,77,135"/>
+<area shape="rect" title="forward declaration to the pure virtual Input class that will be defined later." alt="" coords="182,187,268,213"/>
+<area shape="rect" href="structc___input_mgr_1_1_driver_info__t.html" title=" " alt="" coords="5,96,165,122"/>
+<area shape="poly" title=" " alt="" coords="82,137,83,150,88,161,102,171,126,179,182,190,181,196,124,184,100,176,84,165,78,151,77,137"/>
 <area shape="rect" href="classc___input_common.html" title=" " alt="" coords="27,5,143,31"/>
-<area shape="poly" title=" " alt="" coords="88,47,88,94,82,94,82,47"/>
-<area shape="rect" href="classc___external_input.html" title=" " alt="" coords="336,94,447,120"/>
-<area shape="poly" title=" " alt="" coords="356,130,250,184,247,180,354,125"/>
-<area shape="rect" href="class_fast_timer.html" title=" " alt="" coords="196,5,276,31"/>
-<area shape="poly" title=" " alt="" coords="237,47,228,182,223,182,231,46"/>
-<area shape="poly" title=" " alt="" coords="259,40,296,68,350,91,347,96,293,72,256,44"/>
-<area shape="rect" href="classfsm___external_input__state.html" title=" " alt="" coords="311,5,472,31"/>
-<area shape="poly" title=" " alt="" coords="394,47,394,94,389,94,389,47"/>
+<area shape="poly" title=" " alt="" coords="88,46,88,96,82,96,82,46"/>
+<area shape="rect" href="classc___external_input.html" title=" " alt="" coords="368,96,479,122"/>
+<area shape="poly" title=" " alt="" coords="384,131,253,189,251,184,381,126"/>
+<area shape="rect" href="class_fast_timer.html" title=" " alt="" coords="212,5,292,31"/>
+<area shape="poly" title=" " alt="" coords="248,47,240,94,229,187,223,187,234,94,243,46"/>
+<area shape="poly" title=" " alt="" coords="280,38,328,68,388,93,386,98,325,72,278,42"/>
+<area shape="rect" href="classfsm___external_input__state.html" title=" " alt="" coords="343,5,504,31"/>
+<area shape="poly" title=" " alt="" coords="426,46,426,96,421,96,421,46"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -209,6 +209,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac50551f90f209dbaa2b476a20b524b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affbccb36556f158a6e2a73565af71bdf" id="r_affbccb36556f158a6e2a73565af71bdf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affbccb36556f158a6e2a73565af71bdf">BlankTimerHasExpired</a> (<a class="el" href="#ae9616c847456a5027ce3185523fc1360">e_InputChannelIds</a> Selector)</td></tr>
 <tr class="separator:affbccb36556f158a6e2a73565af71bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affda9cf57220ac433a3a7ac2119724e9" id="r_affda9cf57220ac433a3a7ac2119724e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affda9cf57220ac433a3a7ac2119724e9">RestartDmxOutputTimer</a> ()</td></tr>
+<tr class="separator:affda9cf57220ac433a3a7ac2119724e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d0ff855f7e09c1f1d50cda9dfef302" id="r_af6d0ff855f7e09c1f1d50cda9dfef302"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6d0ff855f7e09c1f1d50cda9dfef302">DmxOutputTimerHasExpired</a> ()</td></tr>
+<tr class="separator:af6d0ff855f7e09c1f1d50cda9dfef302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c71582b3ef01a7a7e2187377cf7b8ac" id="r_a8c71582b3ef01a7a7e2187377cf7b8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c71582b3ef01a7a7e2187377cf7b8ac">ProcessButtonActions</a> (<a class="el" href="classc___external_input.html#a4f30c6d7f324be6effcb32758afc7ef3">c_ExternalInput::InputValue_t</a> value)</td></tr>
 <tr class="separator:a8c71582b3ef01a7a7e2187377cf7b8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -256,12 +260,16 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a3f7851b54dc34c8a9eb6dd7767589540"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26f75c37b6cceb657d65e2d2fe8b8d58" id="r_a26f75c37b6cceb657d65e2d2fe8b8d58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fast_timer.html">FastTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26f75c37b6cceb657d65e2d2fe8b8d58">BlankEndTime</a> [<a class="el" href="#ae9616c847456a5027ce3185523fc1360ab3f6ec3b160aa3917138806e0c2c0973">InputChannelId_End</a>]</td></tr>
 <tr class="separator:a26f75c37b6cceb657d65e2d2fe8b8d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb28e0f03dfa98f542d7e61626029e5" id="r_adeb28e0f03dfa98f542d7e61626029e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_fast_timer.html">FastTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adeb28e0f03dfa98f542d7e61626029e5">DmxOutputEndTimer</a></td></tr>
+<tr class="separator:adeb28e0f03dfa98f542d7e61626029e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3be38776a8a8ac6eb6f6027373735ba9" id="r_a3be38776a8a8ac6eb6f6027373735ba9"><td class="memItemLeft" align="right" valign="top">Ticker&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3be38776a8a8ac6eb6f6027373735ba9">MsTicker</a></td></tr>
 <tr class="separator:a3be38776a8a8ac6eb6f6027373735ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ce42fbab2f848ff825fd77e39af2c8" id="r_ac6ce42fbab2f848ff825fd77e39af2c8"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6ce42fbab2f848ff825fd77e39af2c8">LastTickerTimeStampMS</a> = 0</td></tr>
 <tr class="separator:ac6ce42fbab2f848ff825fd77e39af2c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e4ed3d7806210c06cf4afaacd54a02" id="r_ac7e4ed3d7806210c06cf4afaacd54a02"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7e4ed3d7806210c06cf4afaacd54a02">OutputsPaused</a> = false</td></tr>
-<tr class="separator:ac7e4ed3d7806210c06cf4afaacd54a02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bb3d24989f7037ea217644e5521193e" id="r_a6bb3d24989f7037ea217644e5521193e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bb3d24989f7037ea217644e5521193e">DmxOutputActive</a> = true</td></tr>
+<tr class="separator:a6bb3d24989f7037ea217644e5521193e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a343cb8d620ff944c6d9bfbaea1658fcc" id="r_a343cb8d620ff944c6d9bfbaea1658fcc"><td class="memItemLeft" align="right" valign="top">gpio_num_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a343cb8d620ff944c6d9bfbaea1658fcc">DmxEnablePin</a> = gpio_num_t(0)</td></tr>
+<tr class="separator:a343cb8d620ff944c6d9bfbaea1658fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>forward declaration to the pure virtual Input class that will be defined later. </p>
@@ -331,6 +339,16 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>&lt; Start up the driver and put it into a safe mode </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classc___input_mgr_ad79a53f450decdbcdc7c63ef2278bd1d_cgraph.png" border="0" usemap="#aclassc___input_mgr_ad79a53f450decdbcdc7c63ef2278bd1d_cgraph" alt=""/></div>
+<map name="aclassc___input_mgr_ad79a53f450decdbcdc7c63ef2278bd1d_cgraph" id="aclassc___input_mgr_ad79a53f450decdbcdc7c63ef2278bd1d_cgraph">
+<area shape="rect" title="&lt; Start up the driver and put it into a safe mode" alt="" coords="5,5,163,31"/>
+<area shape="rect" href="_e_s_pixel_stick_8h.html#a97937ae3377e427d21b29966a14e964a" title=" " alt="" coords="211,5,293,31"/>
+<area shape="poly" title=" " alt="" coords="163,16,195,16,195,21,163,21"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -383,68 +401,75 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classc___input_mgr_a06a5f6adfd1e87d4d30a7fa0f78ecc33_cgraph.png" border="0" usemap="#aclassc___input_mgr_a06a5f6adfd1e87d4d30a7fa0f78ecc33_cgraph" alt=""/></div>
 <map name="aclassc___input_mgr_a06a5f6adfd1e87d4d30a7fa0f78ecc33_cgraph" id="aclassc___input_mgr_a06a5f6adfd1e87d4d30a7fa0f78ecc33_cgraph">
-<area shape="rect" title="&lt; Start the module" alt="" coords="5,289,131,315"/>
-<area shape="rect" href="classc___external_input.html#a8b0e3b32b4eeba8e946da0d05a29f116" title=" " alt="" coords="179,189,313,215"/>
-<area shape="poly" title=" " alt="" coords="88,286,177,232,201,220,203,225,180,236,91,291"/>
-<area shape="rect" href="classc___input_mgr.html#afe3597df3db9a6deec4140f410f7f1ee" title=" " alt="" coords="1040,170,1220,210"/>
-<area shape="poly" title=" " alt="" coords="130,286,267,263,348,254,430,250,642,250,744,246,846,236,1024,209,1025,214,847,242,744,252,642,255,430,255,348,259,267,268,131,291"/>
-<area shape="rect" href="classc___input_mgr.html#a86facb1b4291c34d64365c6171cd6802" title=" " alt="" coords="562,340,719,366"/>
-<area shape="poly" title=" " alt="" coords="131,305,547,342,546,347,131,310"/>
-<area shape="rect" href="_input_mgr_8cpp.html#acaee0a3ecdf748027dec320e1f7bb64e" title=" " alt="" coords="185,415,306,440"/>
-<area shape="poly" title=" " alt="" coords="90,313,215,403,212,408,87,318"/>
-<area shape="rect" href="_e_s_pixel_stick_8h.html#a97937ae3377e427d21b29966a14e964a" title=" " alt="" coords="390,189,472,215"/>
-<area shape="poly" title=" " alt="" coords="314,200,375,200,375,205,314,205"/>
-<area shape="rect" href="classc___input_common.html#ab048d5e7494a1f0f2b56ac04d1fab490" title="set up the operating environment based on the current config (or defaults)" alt="" coords="1304,5,1459,31"/>
-<area shape="poly" title=" " alt="" coords="1144,168,1196,104,1232,69,1274,40,1288,33,1290,38,1277,44,1236,73,1200,107,1148,171"/>
-<area shape="rect" href="classc___input_common.html#a748af3e95c6f199379cdf6c95bb0f245" title="get the name for the instantiated driver" alt="" coords="1275,55,1488,80"/>
-<area shape="poly" title=" " alt="" coords="1155,167,1208,128,1274,90,1294,83,1296,88,1276,95,1211,132,1158,171"/>
-<area shape="rect" href="classc___input_mgr.html#a20bc4c894b378f7f4e9acb19ec76b45f" title=" " alt="" coords="1278,104,1485,145"/>
-<area shape="poly" title=" " alt="" coords="1211,167,1285,147,1287,152,1212,172"/>
-<area shape="rect" href="classc___input_common.html#ac6be1a5317faa008bc8f616864d74cab" title=" " alt="" coords="1285,170,1478,210"/>
-<area shape="poly" title=" " alt="" coords="1221,188,1270,188,1270,193,1221,193"/>
-<area shape="rect" href="classc___input_common.html#ad7de5817a9b501804f89c2a5e63d8cdc" title=" " alt="" coords="1282,235,1481,260"/>
-<area shape="poly" title=" " alt="" coords="1222,208,1307,228,1306,233,1220,213"/>
-<area shape="rect" href="classc___input_mgr.html#a90b28a72c3c887ec9b222744b52a05ec" title=" " alt="" coords="786,291,979,316"/>
-<area shape="poly" title=" " alt="" coords="707,337,801,317,802,323,708,342"/>
-<area shape="rect" href="classc___file_mgr.html#a56a3ece591539d6b844ac99ecb2162bc" title=" " alt="" coords="799,340,966,366"/>
-<area shape="poly" title=" " alt="" coords="719,350,783,350,783,356,719,356"/>
-<area shape="rect" href="main_8cpp.html#a137b37e7877287da4965839e0d2db537" title=" " alt="" coords="827,391,938,416"/>
-<area shape="poly" title=" " alt="" coords="706,364,812,386,811,391,705,369"/>
-<area shape="poly" title=" " alt="" coords="932,288,984,269,1036,244,1083,217,1085,221,1038,248,986,274,934,293"/>
-<area shape="rect" href="classc___input_mgr.html#a18e0b867953657d8362cdee1db08b0f7" title=" " alt="" coords="1033,284,1227,310"/>
-<area shape="poly" title=" " alt="" coords="979,298,1017,297,1017,303,980,304"/>
-<area shape="rect" href="classc___input_mgr.html#aae28e335276bd983bcad342f1f9532d8" title=" " alt="" coords="1056,333,1204,359"/>
-<area shape="poly" title=" " alt="" coords="962,314,1041,328,1040,333,961,320"/>
-<area shape="rect" href="classc___external_input.html#a6c2e127e96ae50d0cda699b9fb981373" title=" " alt="" coords="1295,284,1468,310"/>
-<area shape="poly" title=" " alt="" coords="1228,294,1279,294,1279,300,1228,300"/>
-<area shape="rect" href="classc___file_mgr.html#a91d8ba978954c06f5448afb5c75f34b4" title=" " alt="" coords="1298,357,1465,383"/>
-<area shape="poly" title=" " alt="" coords="1205,351,1283,358,1282,363,1205,356"/>
-<area shape="rect" href="classc___input_mgr.html#a47a66106086819f5c9edf6c94df9adc5" title=" " alt="" coords="1294,407,1469,448"/>
-<area shape="poly" title=" " alt="" coords="1191,357,1228,369,1276,393,1293,399,1291,404,1274,398,1226,374,1189,362"/>
-<area shape="poly" title=" " alt="" coords="1340,359,1332,349,1337,339,1354,333,1382,331,1413,333,1428,341,1426,345,1411,339,1381,336,1355,338,1340,343,1337,348,1344,355"/>
-<area shape="rect" href="classc___output_mgr.html#aa5fa47aab179e25649aa61acd159586d" title=" " alt="" coords="1038,448,1223,474"/>
-<area shape="poly" title=" " alt="" coords="939,414,1057,441,1056,447,937,419"/>
-<area shape="rect" href="classc___input_mgr.html#a8a195063dcc63c1fd8de7c14ab3bf0a2" title=" " alt="" coords="1041,383,1219,424"/>
-<area shape="poly" title=" " alt="" coords="938,401,1025,401,1025,406,938,406"/>
-<area shape="rect" href="classc___input_mgr.html#a1823b8316d8574f82bdb06ed1412f161" title="&lt; Called from loop(), renders Input data" alt="" coords="361,469,501,495"/>
-<area shape="poly" title=" " alt="" coords="293,438,371,462,370,467,291,443"/>
-<area shape="poly" title=" " alt="" coords="444,467,488,426,548,383,576,369,579,374,551,387,491,430,447,471"/>
-<area shape="poly" title=" " alt="" coords="459,466,500,448,549,433,618,419,688,410,812,402,812,407,689,415,619,425,550,438,502,453,461,471"/>
-<area shape="poly" title=" " alt="" coords="502,477,1022,461,1023,467,502,483"/>
-<area shape="rect" href="classc___input_mgr.html#affbccb36556f158a6e2a73565af71bdf" title=" " alt="" coords="549,491,732,532"/>
-<area shape="poly" title=" " alt="" coords="502,489,534,494,533,499,502,495"/>
-<area shape="rect" href="classc___output_mgr.html#a7471954d6a26b6894c4066a424d8aec8" title=" " alt="" coords="557,556,724,582"/>
-<area shape="poly" title=" " alt="" coords="456,493,499,517,550,541,571,548,569,553,548,546,497,522,453,498"/>
-<area shape="rect" href="classc___external_input.html#a062079f046bcc63d7075e50142c8138e" title=" " alt="" coords="571,605,710,631"/>
-<area shape="poly" title=" " alt="" coords="445,494,487,542,517,569,551,592,560,597,558,601,548,596,514,573,484,546,441,497"/>
-<area shape="rect" href="main_8cpp.html#aee3a92a77acd81bd67090432b16e23a1" title=" " alt="" coords="578,655,703,680"/>
-<area shape="poly" title=" " alt="" coords="441,494,456,525,480,565,512,606,551,641,565,649,562,654,548,646,508,610,475,568,451,527,436,497"/>
-<area shape="rect" href="classc___output_mgr.html#aec62685e8fb4eff73bfefd3ed5321b01" title="Get the address of the buffer into which the E1.31 handler will stuff data." alt="" coords="780,507,985,532"/>
-<area shape="poly" title=" " alt="" coords="707,553,801,533,802,539,708,558"/>
-<area shape="rect" href="classc___output_mgr.html#abc896c708fce43b559a42ba4e67c9976" title="Get the size (in intensities) of the buffer into which the E1.31 handler will stuff data." alt="" coords="791,556,974,582"/>
-<area shape="poly" title=" " alt="" coords="724,566,776,566,776,572,724,572"/>
-<area shape="rect" href="classfsm___external_input__state.html#aeac61ddb9323f8c9f7c9be1bd7af23e3" title=" " alt="" coords="802,606,963,646"/>
-<area shape="poly" title=" " alt="" coords="710,618,786,620,786,626,710,623"/>
+<area shape="rect" title="&lt; Start the module" alt="" coords="5,265,131,291"/>
+<area shape="rect" href="classc___external_input.html#a8b0e3b32b4eeba8e946da0d05a29f116" title=" " alt="" coords="179,183,313,208"/>
+<area shape="poly" title=" " alt="" coords="97,262,201,213,204,218,99,267"/>
+<area shape="rect" href="classc___input_mgr.html#afe3597df3db9a6deec4140f410f7f1ee" title=" " alt="" coords="1048,170,1228,210"/>
+<area shape="poly" title=" " alt="" coords="131,267,268,252,430,244,646,244,749,240,852,231,1032,206,1033,212,853,236,749,245,646,249,430,249,268,257,131,272"/>
+<area shape="rect" href="classc___input_mgr.html#a86facb1b4291c34d64365c6171cd6802" title=" " alt="" coords="566,321,723,347"/>
+<area shape="poly" title=" " alt="" coords="132,282,551,322,550,328,131,287"/>
+<area shape="rect" href="_input_mgr_8cpp.html#acaee0a3ecdf748027dec320e1f7bb64e" title=" " alt="" coords="185,411,306,436"/>
+<area shape="poly" title=" " alt="" coords="87,290,219,399,215,403,84,294"/>
+<area shape="rect" href="_e_s_pixel_stick_8h.html#a97937ae3377e427d21b29966a14e964a" title=" " alt="" coords="390,183,472,208"/>
+<area shape="poly" title=" " alt="" coords="314,193,375,193,375,198,314,198"/>
+<area shape="rect" href="classc___input_common.html#ab048d5e7494a1f0f2b56ac04d1fab490" title="set up the operating environment based on the current config (or defaults)" alt="" coords="1312,5,1467,31"/>
+<area shape="poly" title=" " alt="" coords="1152,168,1204,104,1240,69,1282,40,1296,33,1298,38,1285,44,1244,73,1208,107,1156,171"/>
+<area shape="rect" href="classc___input_common.html#a748af3e95c6f199379cdf6c95bb0f245" title="get the name for the instantiated driver" alt="" coords="1283,55,1496,80"/>
+<area shape="poly" title=" " alt="" coords="1163,167,1216,128,1282,90,1302,83,1304,88,1284,95,1219,132,1166,171"/>
+<area shape="rect" href="classc___input_mgr.html#a20bc4c894b378f7f4e9acb19ec76b45f" title=" " alt="" coords="1286,104,1493,145"/>
+<area shape="poly" title=" " alt="" coords="1219,167,1293,147,1295,152,1220,172"/>
+<area shape="rect" href="classc___input_common.html#ac6be1a5317faa008bc8f616864d74cab" title=" " alt="" coords="1293,170,1486,210"/>
+<area shape="poly" title=" " alt="" coords="1229,188,1278,188,1278,193,1229,193"/>
+<area shape="rect" href="classc___input_common.html#ad7de5817a9b501804f89c2a5e63d8cdc" title=" " alt="" coords="1290,235,1489,260"/>
+<area shape="poly" title=" " alt="" coords="1230,208,1315,228,1314,233,1228,213"/>
+<area shape="rect" href="classc___input_mgr.html#a90b28a72c3c887ec9b222744b52a05ec" title=" " alt="" coords="794,284,987,310"/>
+<area shape="poly" title=" " alt="" coords="723,320,786,310,787,315,724,325"/>
+<area shape="rect" href="classc___file_mgr.html#a56a3ece591539d6b844ac99ecb2162bc" title=" " alt="" coords="807,333,974,359"/>
+<area shape="poly" title=" " alt="" coords="724,335,792,339,792,344,724,341"/>
+<area shape="rect" href="main_8cpp.html#a137b37e7877287da4965839e0d2db537" title=" " alt="" coords="835,383,946,408"/>
+<area shape="poly" title=" " alt="" coords="696,345,788,369,821,377,820,382,787,374,695,350"/>
+<area shape="poly" title=" " alt="" coords="939,281,992,262,1087,216,1089,221,994,267,941,286"/>
+<area shape="rect" href="classc___input_mgr.html#a18e0b867953657d8362cdee1db08b0f7" title=" " alt="" coords="1041,284,1235,310"/>
+<area shape="poly" title=" " alt="" coords="988,294,1025,294,1025,300,988,300"/>
+<area shape="rect" href="classc___input_mgr.html#aae28e335276bd983bcad342f1f9532d8" title=" " alt="" coords="1064,333,1212,359"/>
+<area shape="poly" title=" " alt="" coords="959,308,1055,327,1054,332,958,313"/>
+<area shape="rect" href="classc___external_input.html#a6c2e127e96ae50d0cda699b9fb981373" title=" " alt="" coords="1303,284,1476,310"/>
+<area shape="poly" title=" " alt="" coords="1236,294,1287,294,1287,300,1236,300"/>
+<area shape="rect" href="classc___file_mgr.html#a91d8ba978954c06f5448afb5c75f34b4" title=" " alt="" coords="1306,357,1473,383"/>
+<area shape="poly" title=" " alt="" coords="1213,351,1291,358,1290,363,1213,356"/>
+<area shape="rect" href="classc___input_mgr.html#a47a66106086819f5c9edf6c94df9adc5" title=" " alt="" coords="1302,407,1477,448"/>
+<area shape="poly" title=" " alt="" coords="1203,357,1236,368,1261,380,1284,393,1300,399,1298,404,1282,398,1258,385,1234,373,1202,362"/>
+<area shape="poly" title=" " alt="" coords="1348,359,1340,349,1345,339,1362,333,1390,331,1421,333,1436,341,1434,345,1419,339,1389,336,1363,338,1348,343,1345,348,1352,355"/>
+<area shape="rect" href="classc___output_mgr.html#aa5fa47aab179e25649aa61acd159586d" title=" " alt="" coords="1046,383,1231,408"/>
+<area shape="poly" title=" " alt="" coords="946,393,1030,393,1030,398,946,398"/>
+<area shape="rect" href="classc___input_mgr.html#a8a195063dcc63c1fd8de7c14ab3bf0a2" title=" " alt="" coords="1049,432,1227,473"/>
+<area shape="poly" title=" " alt="" coords="947,406,1034,426,1033,431,945,411"/>
+<area shape="rect" href="classc___input_mgr.html#a1823b8316d8574f82bdb06ed1412f161" title="&lt; Called from loop(), renders Input data" alt="" coords="361,487,501,512"/>
+<area shape="poly" title=" " alt="" coords="280,434,385,478,383,483,278,439"/>
+<area shape="poly" title=" " alt="" coords="439,485,481,427,512,393,548,364,573,351,576,355,551,368,516,397,485,430,443,488"/>
+<area shape="poly" title=" " alt="" coords="443,484,486,444,516,424,548,408,619,389,691,381,760,380,820,384,819,389,760,386,692,387,620,395,550,413,518,428,489,448,446,488"/>
+<area shape="rect" href="classc___input_mgr.html#affbccb36556f158a6e2a73565af71bdf" title=" " alt="" coords="553,422,736,462"/>
+<area shape="poly" title=" " alt="" coords="481,483,551,465,552,470,483,489"/>
+<area shape="rect" href="classc___output_mgr.html#a7471954d6a26b6894c4066a424d8aec8" title=" " alt="" coords="561,487,728,512"/>
+<area shape="poly" title=" " alt="" coords="501,497,546,497,546,502,501,502"/>
+<area shape="rect" href="classc___input_mgr.html#af6d0ff855f7e09c1f1d50cda9dfef302" title=" " alt="" coords="549,536,740,577"/>
+<area shape="poly" title=" " alt="" coords="483,510,552,529,551,534,481,516"/>
+<area shape="rect" href="classc___external_input.html#a062079f046bcc63d7075e50142c8138e" title=" " alt="" coords="575,601,714,627"/>
+<area shape="poly" title=" " alt="" coords="448,511,491,548,551,586,567,593,565,598,548,591,488,553,444,515"/>
+<area shape="rect" href="main_8cpp.html#aee3a92a77acd81bd67090432b16e23a1" title=" " alt="" coords="582,651,707,676"/>
+<area shape="poly" title=" " alt="" coords="442,511,483,572,514,608,551,637,569,646,566,651,548,642,510,611,478,576,437,514"/>
+<area shape="rect" href="classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71" title=" " alt="" coords="561,700,728,741"/>
+<area shape="poly" title=" " alt="" coords="439,512,453,547,477,594,509,644,551,687,555,690,552,694,548,691,505,647,472,596,449,549,435,514"/>
+<area shape="rect" href="classc___output_mgr.html#aec62685e8fb4eff73bfefd3ed5321b01" title="Get the address of the buffer into which the E1.31 handler will stuff data." alt="" coords="788,441,993,467"/>
+<area shape="poly" title=" " alt="" coords="718,483,802,468,803,473,719,489"/>
+<area shape="rect" href="classc___output_mgr.html#abc896c708fce43b559a42ba4e67c9976" title="Get the size (in intensities) of the buffer into which the E1.31 handler will stuff data." alt="" coords="799,491,982,516"/>
+<area shape="poly" title=" " alt="" coords="728,498,784,499,784,504,728,504"/>
+<area shape="rect" href="class_fast_timer.html#a405ba0c8e0b6b111326da0e5588342b1" title=" " alt="" coords="821,544,960,570"/>
+<area shape="poly" title=" " alt="" coords="740,554,805,554,805,560,740,560"/>
+<area shape="rect" href="classfsm___external_input__state.html#aeac61ddb9323f8c9f7c9be1bd7af23e3" title=" " alt="" coords="810,594,971,634"/>
+<area shape="poly" title=" " alt="" coords="714,612,794,612,794,617,714,617"/>
+<area shape="rect" href="class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="817,708,964,734"/>
+<area shape="poly" title=" " alt="" coords="728,718,801,718,801,724,728,724"/>
 </map>
 </div>
 <div class="dynheader">
@@ -770,6 +795,57 @@ Here is the caller graph for this function:</div>
 <area shape="poly" title=" " alt="" coords="902,667,369,525,370,520,903,662"/>
 <area shape="poly" title=" " alt="" coords="235,504,55,488,55,483,235,499"/>
 <area shape="poly" title=" " alt="" coords="913,524,769,474,771,469,915,519"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af6d0ff855f7e09c1f1d50cda9dfef302" name="af6d0ff855f7e09c1f1d50cda9dfef302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d0ff855f7e09c1f1d50cda9dfef302">&#9670;&#160;</a></span>DmxOutputTimerHasExpired()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c_InputMgr::DmxOutputTimerHasExpired </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_cgraph.png" border="0" usemap="#aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_cgraph" alt=""/></div>
+<map name="aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_cgraph" id="aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,196,46"/>
+<area shape="rect" href="class_fast_timer.html#a405ba0c8e0b6b111326da0e5588342b1" title=" " alt="" coords="244,13,383,38"/>
+<area shape="poly" title=" " alt="" coords="196,23,228,23,228,28,196,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_icgraph.png" border="0" usemap="#aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_icgraph" alt=""/></div>
+<map name="aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_icgraph" id="aclassc___input_mgr_af6d0ff855f7e09c1f1d50cda9dfef302_icgraph">
+<area shape="rect" title=" " alt="" coords="638,5,828,46"/>
+<area shape="rect" href="classc___input_mgr.html#a1823b8316d8574f82bdb06ed1412f161" title="&lt; Called from loop(), renders Input data" alt="" coords="449,13,590,38"/>
+<area shape="poly" title=" " alt="" coords="622,28,590,28,590,23,622,23"/>
+<area shape="rect" href="_input_mgr_8cpp.html#acaee0a3ecdf748027dec320e1f7bb64e" title=" " alt="" coords="280,13,401,38"/>
+<area shape="poly" title=" " alt="" coords="434,28,402,28,402,23,434,23"/>
+<area shape="rect" href="classc___input_mgr.html#a06a5f6adfd1e87d4d30a7fa0f78ecc33" title="&lt; Start the module" alt="" coords="107,13,232,38"/>
+<area shape="poly" title=" " alt="" coords="264,28,232,28,232,23,264,23"/>
+<area shape="rect" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Arduino Setup." alt="" coords="5,13,59,38"/>
+<area shape="poly" title=" " alt="" coords="91,28,59,28,59,23,91,23"/>
 </map>
 </div>
 
@@ -1379,58 +1455,65 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classc___input_mgr_a1823b8316d8574f82bdb06ed1412f161_cgraph.png" border="0" usemap="#aclassc___input_mgr_a1823b8316d8574f82bdb06ed1412f161_cgraph" alt=""/></div>
 <map name="aclassc___input_mgr_a1823b8316d8574f82bdb06ed1412f161_cgraph" id="aclassc___input_mgr_a1823b8316d8574f82bdb06ed1412f161_cgraph">
-<area shape="rect" title="&lt; Called from loop(), renders Input data" alt="" coords="5,348,146,374"/>
-<area shape="rect" href="classc___input_mgr.html#affbccb36556f158a6e2a73565af71bdf" title=" " alt="" coords="194,159,376,200"/>
-<area shape="poly" title=" " alt="" coords="81,346,122,282,154,243,192,209,198,206,201,210,195,214,158,247,127,285,86,349"/>
-<area shape="rect" href="classc___output_mgr.html#a7471954d6a26b6894c4066a424d8aec8" title=" " alt="" coords="202,224,368,250"/>
-<area shape="poly" title=" " alt="" coords="95,345,192,283,242,255,245,260,195,287,98,350"/>
-<area shape="rect" href="classc___input_mgr.html#a86facb1b4291c34d64365c6171cd6802" title=" " alt="" coords="206,297,364,323"/>
-<area shape="poly" title=" " alt="" coords="131,345,213,325,214,330,132,350"/>
-<area shape="rect" href="main_8cpp.html#a137b37e7877287da4965839e0d2db537" title=" " alt="" coords="472,348,582,374"/>
-<area shape="poly" title=" " alt="" coords="146,358,456,358,456,364,146,364"/>
-<area shape="rect" href="classc___output_mgr.html#aa5fa47aab179e25649aa61acd159586d" title=" " alt="" coords="682,403,867,428"/>
-<area shape="poly" title=" " alt="" coords="146,364,667,404,667,410,146,369"/>
-<area shape="rect" href="classc___external_input.html#a062079f046bcc63d7075e50142c8138e" title=" " alt="" coords="216,449,354,475"/>
-<area shape="poly" title=" " alt="" coords="98,372,142,399,195,428,227,441,225,446,193,433,139,404,95,376"/>
-<area shape="rect" href="main_8cpp.html#aee3a92a77acd81bd67090432b16e23a1" title=" " alt="" coords="222,499,348,524"/>
-<area shape="poly" title=" " alt="" coords="87,373,129,428,160,459,195,485,209,492,206,497,192,490,156,463,125,431,83,376"/>
-<area shape="rect" href="classc___output_mgr.html#aec62685e8fb4eff73bfefd3ed5321b01" title="Get the address of the buffer into which the E1.31 handler will stuff data." alt="" coords="424,151,629,176"/>
-<area shape="poly" title=" " alt="" coords="339,221,375,209,399,197,423,185,444,178,445,183,425,190,401,202,377,214,341,226"/>
-<area shape="rect" href="classc___output_mgr.html#abc896c708fce43b559a42ba4e67c9976" title="Get the size (in intensities) of the buffer into which the E1.31 handler will stuff data." alt="" coords="436,200,618,226"/>
-<area shape="poly" title=" " alt="" coords="368,226,420,221,420,226,369,231"/>
-<area shape="rect" href="classc___input_mgr.html#a90b28a72c3c887ec9b222744b52a05ec" title=" " alt="" coords="430,249,623,275"/>
-<area shape="poly" title=" " alt="" coords="353,294,443,276,444,281,354,299"/>
-<area shape="rect" href="classc___file_mgr.html#a56a3ece591539d6b844ac99ecb2162bc" title=" " alt="" coords="444,299,610,324"/>
-<area shape="poly" title=" " alt="" coords="364,308,428,308,428,314,364,313"/>
-<area shape="poly" title=" " alt="" coords="350,321,457,344,455,349,349,326"/>
-<area shape="rect" href="classc___input_mgr.html#a18e0b867953657d8362cdee1db08b0f7" title=" " alt="" coords="677,56,872,82"/>
-<area shape="poly" title=" " alt="" coords="607,246,628,236,644,222,654,208,675,174,749,91,753,95,679,177,658,211,648,226,631,240,609,251"/>
-<area shape="rect" href="classc___input_mgr.html#afe3597df3db9a6deec4140f410f7f1ee" title=" " alt="" coords="684,187,865,228"/>
-<area shape="poly" title=" " alt="" coords="587,246,668,228,670,233,589,251"/>
-<area shape="rect" href="classc___input_mgr.html#aae28e335276bd983bcad342f1f9532d8" title=" " alt="" coords="700,288,849,314"/>
-<area shape="poly" title=" " alt="" coords="614,273,685,284,684,290,613,278"/>
-<area shape="rect" href="classc___external_input.html#a6c2e127e96ae50d0cda699b9fb981373" title=" " alt="" coords="939,5,1112,31"/>
-<area shape="poly" title=" " alt="" coords="841,53,943,32,944,37,842,58"/>
-<area shape="rect" href="classc___input_common.html#ab048d5e7494a1f0f2b56ac04d1fab490" title="set up the operating environment based on the current config (or defaults)" alt="" coords="948,55,1104,80"/>
-<area shape="poly" title=" " alt="" coords="793,185,847,136,881,111,918,89,932,83,934,88,921,94,884,115,850,141,797,189"/>
-<area shape="rect" href="classc___input_common.html#a748af3e95c6f199379cdf6c95bb0f245" title="get the name for the instantiated driver" alt="" coords="920,104,1132,130"/>
-<area shape="poly" title=" " alt="" coords="815,184,864,161,919,140,946,131,947,136,921,145,866,166,818,189"/>
-<area shape="rect" href="classc___input_mgr.html#a20bc4c894b378f7f4e9acb19ec76b45f" title=" " alt="" coords="923,154,1129,194"/>
-<area shape="poly" title=" " alt="" coords="865,193,907,187,908,193,866,198"/>
-<area shape="rect" href="classc___input_common.html#ac6be1a5317faa008bc8f616864d74cab" title=" " alt="" coords="930,219,1122,260"/>
-<area shape="poly" title=" " alt="" coords="866,216,915,223,914,228,865,222"/>
-<area shape="rect" href="classc___input_common.html#ad7de5817a9b501804f89c2a5e63d8cdc" title=" " alt="" coords="927,284,1125,310"/>
-<area shape="poly" title=" " alt="" coords="818,226,921,269,947,277,946,282,919,274,816,231"/>
-<area shape="rect" href="classc___file_mgr.html#a91d8ba978954c06f5448afb5c75f34b4" title=" " alt="" coords="942,357,1110,383"/>
-<area shape="poly" title=" " alt="" coords="828,312,872,324,965,350,964,355,871,329,827,317"/>
-<area shape="rect" href="classc___input_mgr.html#a47a66106086819f5c9edf6c94df9adc5" title=" " alt="" coords="938,407,1114,448"/>
-<area shape="poly" title=" " alt="" coords="850,312,873,324,890,341,898,360,906,377,921,393,927,397,924,402,918,398,901,380,893,362,886,344,870,328,848,317"/>
-<area shape="poly" title=" " alt="" coords="984,359,976,349,981,339,998,333,1026,331,1057,333,1072,341,1070,345,1056,339,1026,336,999,338,985,343,981,348,988,355"/>
-<area shape="poly" title=" " alt="" coords="583,370,698,396,697,401,582,376"/>
-<area shape="rect" href="classc___input_mgr.html#a8a195063dcc63c1fd8de7c14ab3bf0a2" title=" " alt="" coords="685,338,864,378"/>
-<area shape="poly" title=" " alt="" coords="582,358,670,357,670,362,582,363"/>
-<area shape="rect" href="classfsm___external_input__state.html#aeac61ddb9323f8c9f7c9be1bd7af23e3" title=" " alt="" coords="446,448,607,489"/>
-<area shape="poly" title=" " alt="" coords="354,461,430,464,430,469,354,467"/>
+<area shape="rect" title="&lt; Called from loop(), renders Input data" alt="" coords="5,308,146,334"/>
+<area shape="rect" href="classc___input_mgr.html#affbccb36556f158a6e2a73565af71bdf" title=" " alt="" coords="198,79,380,120"/>
+<area shape="poly" title=" " alt="" coords="79,307,93,272,117,224,150,173,192,130,197,126,200,130,195,133,154,177,121,227,98,274,84,309"/>
+<area shape="rect" href="classc___output_mgr.html#a7471954d6a26b6894c4066a424d8aec8" title=" " alt="" coords="206,144,372,170"/>
+<area shape="poly" title=" " alt="" coords="83,306,126,250,157,217,192,188,220,173,222,178,195,192,160,221,130,253,88,309"/>
+<area shape="rect" href="classc___input_mgr.html#af6d0ff855f7e09c1f1d50cda9dfef302" title=" " alt="" coords="194,202,384,242"/>
+<area shape="poly" title=" " alt="" coords="104,305,228,247,230,252,106,310"/>
+<area shape="rect" href="classc___input_mgr.html#a86facb1b4291c34d64365c6171cd6802" title=" " alt="" coords="210,283,368,308"/>
+<area shape="poly" title=" " alt="" coords="145,310,194,304,195,309,146,315"/>
+<area shape="rect" href="main_8cpp.html#a137b37e7877287da4965839e0d2db537" title=" " alt="" coords="480,337,590,363"/>
+<area shape="poly" title=" " alt="" coords="146,323,464,343,464,348,146,328"/>
+<area shape="rect" href="classc___external_input.html#a062079f046bcc63d7075e50142c8138e" title=" " alt="" coords="220,384,358,410"/>
+<area shape="poly" title=" " alt="" coords="112,332,195,362,234,376,232,381,193,367,111,337"/>
+<area shape="rect" href="main_8cpp.html#aee3a92a77acd81bd67090432b16e23a1" title=" " alt="" coords="226,433,352,459"/>
+<area shape="poly" title=" " alt="" coords="90,332,133,376,163,400,195,420,212,428,210,432,192,425,160,404,130,380,86,336"/>
+<area shape="rect" href="classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71" title=" " alt="" coords="205,483,372,524"/>
+<area shape="poly" title=" " alt="" coords="86,333,127,398,158,436,195,469,201,473,198,478,192,474,154,440,122,401,81,336"/>
+<area shape="rect" href="classc___output_mgr.html#aec62685e8fb4eff73bfefd3ed5321b01" title="Get the address of the buffer into which the E1.31 handler will stuff data." alt="" coords="432,91,637,116"/>
+<area shape="poly" title=" " alt="" coords="351,141,457,118,458,123,352,146"/>
+<area shape="rect" href="classc___output_mgr.html#abc896c708fce43b559a42ba4e67c9976" title="Get the size (in intensities) of the buffer into which the E1.31 handler will stuff data." alt="" coords="444,140,626,166"/>
+<area shape="poly" title=" " alt="" coords="372,153,428,152,428,157,373,158"/>
+<area shape="rect" href="class_fast_timer.html#a405ba0c8e0b6b111326da0e5588342b1" title=" " alt="" coords="465,189,604,215"/>
+<area shape="poly" title=" " alt="" coords="384,212,449,206,450,212,385,217"/>
+<area shape="rect" href="classc___input_mgr.html#a90b28a72c3c887ec9b222744b52a05ec" title=" " alt="" coords="438,239,631,264"/>
+<area shape="poly" title=" " alt="" coords="364,279,444,265,445,270,365,285"/>
+<area shape="rect" href="classc___file_mgr.html#a56a3ece591539d6b844ac99ecb2162bc" title=" " alt="" coords="452,288,618,314"/>
+<area shape="poly" title=" " alt="" coords="368,295,437,296,436,301,368,300"/>
+<area shape="poly" title=" " alt="" coords="350,306,465,332,463,337,349,311"/>
+<area shape="rect" href="classc___input_mgr.html#a18e0b867953657d8362cdee1db08b0f7" title=" " alt="" coords="685,56,880,82"/>
+<area shape="poly" title=" " alt="" coords="613,236,636,225,757,92,761,95,639,230,615,241"/>
+<area shape="rect" href="classc___input_mgr.html#afe3597df3db9a6deec4140f410f7f1ee" title=" " alt="" coords="692,187,873,228"/>
+<area shape="poly" title=" " alt="" coords="610,235,677,223,678,229,611,241"/>
+<area shape="rect" href="classc___input_mgr.html#aae28e335276bd983bcad342f1f9532d8" title=" " alt="" coords="708,288,857,314"/>
+<area shape="poly" title=" " alt="" coords="604,262,700,282,699,287,602,268"/>
+<area shape="rect" href="classc___external_input.html#a6c2e127e96ae50d0cda699b9fb981373" title=" " alt="" coords="947,5,1120,31"/>
+<area shape="poly" title=" " alt="" coords="849,53,951,32,952,37,850,58"/>
+<area shape="rect" href="classc___input_common.html#ab048d5e7494a1f0f2b56ac04d1fab490" title="set up the operating environment based on the current config (or defaults)" alt="" coords="956,55,1112,80"/>
+<area shape="poly" title=" " alt="" coords="801,185,855,136,889,111,926,89,940,83,942,88,929,94,892,115,858,141,805,189"/>
+<area shape="rect" href="classc___input_common.html#a748af3e95c6f199379cdf6c95bb0f245" title="get the name for the instantiated driver" alt="" coords="928,104,1140,130"/>
+<area shape="poly" title=" " alt="" coords="823,184,872,161,927,140,954,131,955,136,929,145,874,166,826,189"/>
+<area shape="rect" href="classc___input_mgr.html#a20bc4c894b378f7f4e9acb19ec76b45f" title=" " alt="" coords="931,154,1137,194"/>
+<area shape="poly" title=" " alt="" coords="873,193,915,187,916,193,874,198"/>
+<area shape="rect" href="classc___input_common.html#ac6be1a5317faa008bc8f616864d74cab" title=" " alt="" coords="938,219,1130,260"/>
+<area shape="poly" title=" " alt="" coords="874,216,923,223,922,228,873,222"/>
+<area shape="rect" href="classc___input_common.html#ad7de5817a9b501804f89c2a5e63d8cdc" title=" " alt="" coords="935,284,1133,310"/>
+<area shape="poly" title=" " alt="" coords="826,226,929,269,955,277,954,282,927,274,824,231"/>
+<area shape="rect" href="classc___file_mgr.html#a91d8ba978954c06f5448afb5c75f34b4" title=" " alt="" coords="950,357,1118,383"/>
+<area shape="poly" title=" " alt="" coords="840,312,880,322,975,350,974,355,879,327,839,317"/>
+<area shape="rect" href="classc___input_mgr.html#a47a66106086819f5c9edf6c94df9adc5" title=" " alt="" coords="946,407,1122,448"/>
+<area shape="poly" title=" " alt="" coords="858,311,881,323,898,340,906,359,914,377,929,393,935,397,932,402,926,398,909,379,901,361,894,343,878,327,856,315"/>
+<area shape="poly" title=" " alt="" coords="992,359,984,349,989,339,1006,333,1034,331,1065,333,1080,341,1078,345,1064,339,1034,336,1007,338,993,343,989,348,996,355"/>
+<area shape="rect" href="classc___output_mgr.html#aa5fa47aab179e25649aa61acd159586d" title=" " alt="" coords="690,337,875,363"/>
+<area shape="poly" title=" " alt="" coords="590,348,674,348,674,353,590,353"/>
+<area shape="rect" href="classc___input_mgr.html#a8a195063dcc63c1fd8de7c14ab3bf0a2" title=" " alt="" coords="693,387,872,428"/>
+<area shape="poly" title=" " alt="" coords="591,360,679,381,677,386,590,365"/>
+<area shape="rect" href="classfsm___external_input__state.html#aeac61ddb9323f8c9f7c9be1bd7af23e3" title=" " alt="" coords="454,387,615,428"/>
+<area shape="poly" title=" " alt="" coords="359,397,439,401,438,406,358,402"/>
+<area shape="rect" href="class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="461,491,608,516"/>
+<area shape="poly" title=" " alt="" coords="373,501,445,501,445,506,373,506"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1618,11 +1701,9 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_cgraph.png" border="0" usemap="#aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_cgraph" alt=""/></div>
 <map name="aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_cgraph" id="aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_cgraph">
-<area shape="rect" title=" " alt="" coords="5,23,173,64"/>
-<area shape="rect" href="classc___output_mgr.html#aa5fa47aab179e25649aa61acd159586d" title=" " alt="" coords="221,5,406,31"/>
-<area shape="poly" title=" " alt="" coords="173,31,205,28,205,33,173,37"/>
-<area shape="rect" href="class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="240,55,387,80"/>
-<area shape="poly" title=" " alt="" coords="173,50,224,55,224,61,173,55"/>
+<area shape="rect" title=" " alt="" coords="5,5,173,46"/>
+<area shape="rect" href="class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="221,13,368,38"/>
+<area shape="poly" title=" " alt="" coords="173,23,205,23,205,28,173,28"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1630,19 +1711,94 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_icgraph.png" border="0" usemap="#aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_icgraph" alt=""/></div>
 <map name="aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_icgraph" id="aclassc___input_mgr_ac50551f90f209dbaa2b476a20b524b71_icgraph">
-<area shape="rect" title=" " alt="" coords="1223,182,1390,222"/>
+<area shape="rect" title=" " alt="" coords="1223,214,1390,254"/>
 <area shape="rect" href="classc___input_artnet.html#acf91f737e9f231b01b6b53ceb1d0a6fa" title=" " alt="" coords="971,33,1153,59"/>
-<area shape="poly" title=" " alt="" coords="1280,171,1234,120,1205,95,1174,74,1146,62,1148,57,1176,69,1208,91,1238,116,1284,168"/>
+<area shape="poly" title=" " alt="" coords="1285,202,1240,135,1209,102,1174,74,1149,62,1151,57,1176,69,1213,98,1244,132,1290,199"/>
 <area shape="rect" href="classc___input_effect_engine.html#a054251f6f3f1c337c8742c05e5ad6563" title="Call from loop(), renders Input data." alt="" coords="994,83,1130,124"/>
-<area shape="poly" title=" " alt="" coords="1253,177,1174,139,1130,124,1132,119,1176,134,1256,172"/>
+<area shape="poly" title=" " alt="" coords="1270,206,1226,171,1174,139,1129,122,1131,117,1176,134,1229,167,1273,202"/>
 <area shape="rect" href="classfsm___play_file__state___playing_file.html#a78f01a0f55770883e74f07e65769f8a2" title=" " alt="" coords="996,148,1128,189"/>
-<area shape="poly" title=" " alt="" coords="1207,191,1128,180,1129,175,1208,186"/>
+<area shape="poly" title=" " alt="" coords="1213,212,1128,189,1129,184,1214,207"/>
 <area shape="rect" href="classc___input_effect_engine.html#a77cbebfae3207a36a760ed4e5b439c66" title="Call from loop(), renders Input data." alt="" coords="994,214,1130,254"/>
-<area shape="poly" title=" " alt="" coords="1208,218,1131,228,1130,223,1207,212"/>
+<area shape="poly" title=" " alt="" coords="1208,237,1131,237,1131,232,1208,232"/>
+<area shape="rect" href="classc___input_mgr.html#a1823b8316d8574f82bdb06ed1412f161" title="&lt; Called from loop(), renders Input data" alt="" coords="992,279,1132,304"/>
+<area shape="poly" title=" " alt="" coords="1209,261,1176,269,1124,281,1123,275,1174,264,1207,256"/>
+<area shape="rect" href="classc___input_e131.html#a1c08f019d63f47580365c75069d0a2aa" title=" " alt="" coords="962,328,1162,369"/>
+<area shape="poly" title=" " alt="" coords="1267,266,1224,294,1176,319,1148,330,1146,325,1174,314,1222,289,1264,261"/>
+<area shape="rect" href="classc___input_d_d_p.html#a47417df395fb4998423f6406af926daa" title=" " alt="" coords="949,393,1175,419"/>
+<area shape="poly" title=" " alt="" coords="1287,269,1241,328,1211,358,1176,383,1149,395,1147,390,1174,379,1207,354,1237,324,1283,266"/>
+<area shape="rect" href="classc___input_artnet.html#a64e5300f0fc57fc4a667255119cbd510" title=" " alt="" coords="712,33,890,59"/>
+<area shape="poly" title=" " alt="" coords="955,49,890,49,890,44,955,44"/>
+<area shape="rect" href="classc___input_artnet.html#a42c0a5c8c246a240d91d2d0b7c5757a3" title=" " alt="" coords="468,26,653,66"/>
+<area shape="poly" title=" " alt="" coords="697,49,654,49,654,44,697,44"/>
+<area shape="rect" href="classc___input_artnet.html#a563a8812372831c86d5db8bee8e3cba9" title="set up the operating environment based on the current config (or defaults)" alt="" coords="258,5,396,31"/>
+<area shape="poly" title=" " alt="" coords="452,36,397,29,397,24,453,31"/>
+<area shape="rect" href="classc___input_artnet.html#a7b4a9a8a07c4096b6f9f99a581abb27a" title=" " alt="" coords="235,55,420,96"/>
+<area shape="poly" title=" " alt="" coords="453,62,421,66,420,61,452,57"/>
+<area shape="rect" href="classc___input_artnet.html#a9396efd7449198caf16fb4cbc055277e" title=" " alt="" coords="5,5,187,31"/>
+<area shape="poly" title=" " alt="" coords="243,21,187,21,187,16,243,16"/>
+<area shape="rect" href="classfsm___play_effect__state___playing_effect.html#a0bd06217392513ebcc5d436896e73550" title=" " alt="" coords="729,214,873,254"/>
+<area shape="poly" title=" " alt="" coords="978,237,873,237,873,232,978,232"/>
+<area shape="rect" href="_input_mgr_8cpp.html#acaee0a3ecdf748027dec320e1f7bb64e" title=" " alt="" coords="740,279,862,304"/>
+<area shape="poly" title=" " alt="" coords="976,294,862,294,862,289,976,289"/>
+<area shape="rect" href="classc___input_mgr.html#a06a5f6adfd1e87d4d30a7fa0f78ecc33" title="&lt; Start the module" alt="" coords="498,279,623,304"/>
+<area shape="poly" title=" " alt="" coords="725,294,624,294,624,289,725,289"/>
+<area shape="rect" href="main_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="Arduino Setup." alt="" coords="301,279,354,304"/>
+<area shape="poly" title=" " alt="" coords="482,294,355,294,355,289,482,289"/>
+<area shape="rect" href="classc___input_d_d_p.html#a3ce4a8b28f73e04be6ae752efe285238" title="Call from loop(), renders Input data." alt="" coords="728,364,874,390"/>
+<area shape="poly" title=" " alt="" coords="933,394,874,388,875,382,934,389"/>
+<area shape="rect" href="classc___input_d_d_p.html#a868ebba6814897249aa62252c67a04a5" title=" " alt="" coords="701,414,901,454"/>
+<area shape="poly" title=" " alt="" coords="933,423,901,426,901,421,933,417"/>
+<area shape="rect" href="classc___input_d_d_p.html#a14a8adcaf46d6f695d96b988810a88f8" title=" " alt="" coords="472,414,649,454"/>
+<area shape="poly" title=" " alt="" coords="686,437,650,437,650,432,686,432"/>
+<area shape="rect" href="classc___input_d_d_p.html#aff1d43d659dccea70ca4204bd477508b" title="set up the operating environment based on the current config (or defaults)" alt="" coords="262,421,392,447"/>
+<area shape="poly" title=" " alt="" coords="457,437,393,437,393,432,457,432"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="affda9cf57220ac433a3a7ac2119724e9" name="affda9cf57220ac433a3a7ac2119724e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affda9cf57220ac433a3a7ac2119724e9">&#9670;&#160;</a></span>RestartDmxOutputTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void c_InputMgr::RestartDmxOutputTimer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_cgraph.png" border="0" usemap="#aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_cgraph" alt=""/></div>
+<map name="aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_cgraph" id="aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,205,46"/>
+<area shape="rect" href="class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="253,13,400,38"/>
+<area shape="poly" title=" " alt="" coords="205,23,238,23,238,28,205,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_icgraph.png" border="0" usemap="#aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_icgraph" alt=""/></div>
+<map name="aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_icgraph" id="aclassc___input_mgr_affda9cf57220ac433a3a7ac2119724e9_icgraph">
+<area shape="rect" title=" " alt="" coords="1223,182,1422,222"/>
+<area shape="rect" href="classc___input_artnet.html#acf91f737e9f231b01b6b53ceb1d0a6fa" title=" " alt="" coords="971,33,1153,59"/>
+<area shape="poly" title=" " alt="" coords="1293,172,1241,121,1209,95,1174,74,1144,62,1146,57,1176,69,1212,91,1244,117,1296,168"/>
+<area shape="rect" href="classc___input_effect_engine.html#a054251f6f3f1c337c8742c05e5ad6563" title="Call from loop(), renders Input data." alt="" coords="994,83,1130,124"/>
+<area shape="poly" title=" " alt="" coords="1264,177,1174,139,1130,125,1131,119,1176,134,1266,172"/>
+<area shape="rect" href="classfsm___play_file__state___playing_file.html#a78f01a0f55770883e74f07e65769f8a2" title=" " alt="" coords="996,148,1128,189"/>
+<area shape="poly" title=" " alt="" coords="1207,190,1128,180,1129,175,1208,185"/>
+<area shape="rect" href="classc___input_effect_engine.html#a77cbebfae3207a36a760ed4e5b439c66" title="Call from loop(), renders Input data." alt="" coords="994,214,1130,254"/>
+<area shape="poly" title=" " alt="" coords="1208,219,1131,228,1130,223,1207,214"/>
 <area shape="rect" href="classc___input_e131.html#a1c08f019d63f47580365c75069d0a2aa" title=" " alt="" coords="962,279,1162,320"/>
-<area shape="poly" title=" " alt="" coords="1255,232,1176,269,1140,281,1139,276,1174,264,1253,227"/>
+<area shape="poly" title=" " alt="" coords="1265,232,1176,269,1139,281,1137,276,1174,264,1263,227"/>
 <area shape="rect" href="classc___input_d_d_p.html#a47417df395fb4998423f6406af926daa" title=" " alt="" coords="949,344,1175,370"/>
-<area shape="poly" title=" " alt="" coords="1283,236,1238,287,1208,313,1176,334,1147,346,1145,341,1174,329,1205,308,1234,283,1279,233"/>
+<area shape="poly" title=" " alt="" coords="1296,236,1244,287,1211,312,1176,334,1146,346,1144,341,1174,329,1208,308,1240,283,1292,232"/>
 <area shape="rect" href="classc___input_artnet.html#a64e5300f0fc57fc4a667255119cbd510" title=" " alt="" coords="712,33,890,59"/>
 <area shape="poly" title=" " alt="" coords="955,49,890,49,890,44,955,44"/>
 <area shape="rect" href="classc___input_artnet.html#a42c0a5c8c246a240d91d2d0b7c5757a3" title=" " alt="" coords="468,26,653,66"/>
@@ -2131,6 +2287,72 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a343cb8d620ff944c6d9bfbaea1658fcc" name="a343cb8d620ff944c6d9bfbaea1658fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a343cb8d620ff944c6d9bfbaea1658fcc">&#9670;&#160;</a></span>DmxEnablePin</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gpio_num_t c_InputMgr::DmxEnablePin = gpio_num_t(0)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6bb3d24989f7037ea217644e5521193e" name="a6bb3d24989f7037ea217644e5521193e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bb3d24989f7037ea217644e5521193e">&#9670;&#160;</a></span>DmxOutputActive</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool c_InputMgr::DmxOutputActive = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adeb28e0f03dfa98f542d7e61626029e5" name="adeb28e0f03dfa98f542d7e61626029e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb28e0f03dfa98f542d7e61626029e5">&#9670;&#160;</a></span>DmxOutputEndTimer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_fast_timer.html">FastTimer</a> c_InputMgr::DmxOutputEndTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad0133347ca029d6e96ba7c0281a3444d" name="ad0133347ca029d6e96ba7c0281a3444d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0133347ca029d6e96ba7c0281a3444d">&#9670;&#160;</a></span>EffectEngineIsConfiguredToRun</h2>
 
@@ -2298,28 +2520,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">Ticker c_InputMgr::MsTicker</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac7e4ed3d7806210c06cf4afaacd54a02" name="ac7e4ed3d7806210c06cf4afaacd54a02"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e4ed3d7806210c06cf4afaacd54a02">&#9670;&#160;</a></span>OutputsPaused</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool c_InputMgr::OutputsPaused = false</td>
         </tr>
       </table>
   </td>

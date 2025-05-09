@@ -18,8 +18,7 @@ var searchData=
   ['outputchannelstartingoffset_15',['OutputChannelStartingOffset',['../structc___output_mgr_1_1_driver_info__t.html#af098b2ead9c2acf4a1194912e3af7ae0',1,'c_OutputMgr::DriverInfo_t']]],
   ['outputispaused_16',['OutputIsPaused',['../classc___output_mgr.html#affde0fc6a806f815ee874e5cb3d24a03',1,'c_OutputMgr::OutputIsPaused'],['../classc___output_uart.html#a6105c8cbc70466ad6e2152f6020a210e',1,'c_OutputUart::OutputIsPaused']]],
   ['outputmgr_17',['OutputMgr',['../_output_mgr_8cpp.html#af6b50c745df05adfe6f502280127db1f',1,'OutputMgr:&#160;OutputMgr.cpp'],['../_output_mgr_8hpp.html#af6b50c745df05adfe6f502280127db1f',1,'OutputMgr:&#160;OutputMgr.cpp']]],
-  ['outputspaused_18',['OutputsPaused',['../classc___input_mgr.html#ac7e4ed3d7806210c06cf4afaacd54a02',1,'c_InputMgr']]],
-  ['outputtype_19',['OutputType',['../classc___output_common.html#a9b9ccc6ceee5ad7033235824b2d87b43',1,'c_OutputCommon']]],
-  ['outputtypexlatemap_20',['OutputTypeXlateMap',['../_output_mgr_8cpp.html#a5ed825bf1fd2b0279f9009fb1dc0c4f3',1,'OutputMgr.cpp']]],
-  ['outputuartconfig_21',['OutputUartConfig',['../classc___output_uart.html#a2a4d8b90bc76bc72b69a1fc9fc1fa969',1,'c_OutputUart']]]
+  ['outputtype_18',['OutputType',['../classc___output_common.html#a9b9ccc6ceee5ad7033235824b2d87b43',1,'c_OutputCommon']]],
+  ['outputtypexlatemap_19',['OutputTypeXlateMap',['../_output_mgr_8cpp.html#a5ed825bf1fd2b0279f9009fb1dc0c4f3',1,'OutputMgr.cpp']]],
+  ['outputuartconfig_20',['OutputUartConfig',['../classc___output_uart.html#a2a4d8b90bc76bc72b69a1fc9fc1fa969',1,'c_OutputUart']]]
 ];

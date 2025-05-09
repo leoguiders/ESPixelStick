@@ -35,7 +35,8 @@ var searchData=
   ['responseaddress_32',['ResponseAddress',['../structc___input_d_d_p_1_1_packet_buffer__t.html#afaabcf7bfdf68f8ffcdadbfb1104ff11',1,'c_InputDDP::PacketBuffer_t']]],
   ['responseport_33',['ResponsePort',['../structc___input_d_d_p_1_1_packet_buffer__t.html#a0fe17b362993358cd7402373774ab977',1,'c_InputDDP::PacketBuffer_t']]],
   ['restartblanktimer_34',['RestartBlankTimer',['../classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71',1,'c_InputMgr']]],
-  ['restoreserialportoperation_35',['RestoreSerialPortOperation',['../classc___output_uart.html#a4a957a10495a41bc1ff8f469be391e04',1,'c_OutputUart']]],
-  ['rgb2hsv_36',['rgb2hsv',['../classc___input_effect_engine.html#a6751a5a67dd911744b80574029cac95c',1,'c_InputEffectEngine']]],
-  ['rmt_37',['Rmt',['../classc___output_mgr.html#a970adc830ccb78bebef75d526c515cc9afb1a932142103c9fcad347c899382cbf',1,'c_OutputMgr']]]
+  ['restartdmxoutputtimer_35',['RestartDmxOutputTimer',['../classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9',1,'c_InputMgr']]],
+  ['restoreserialportoperation_36',['RestoreSerialPortOperation',['../classc___output_uart.html#a4a957a10495a41bc1ff8f469be391e04',1,'c_OutputUart']]],
+  ['rgb2hsv_37',['rgb2hsv',['../classc___input_effect_engine.html#a6751a5a67dd911744b80574029cac95c',1,'c_InputEffectEngine']]],
+  ['rmt_38',['Rmt',['../classc___output_mgr.html#a970adc830ccb78bebef75d526c515cc9afb1a932142103c9fcad347c899382cbf',1,'c_OutputMgr']]]
 ];

@@ -28,6 +28,7 @@ var classc___input_mgr =
     [ "CreateJsonConfig", "classc___input_mgr.html#a18e0b867953657d8362cdee1db08b0f7", null ],
     [ "CreateNewConfig", "classc___input_mgr.html#a90b28a72c3c887ec9b222744b52a05ec", null ],
     [ "DeleteConfig", "classc___input_mgr.html#a468e07f1080b710b35059bc87b9b8729", null ],
+    [ "DmxOutputTimerHasExpired", "classc___input_mgr.html#af6d0ff855f7e09c1f1d50cda9dfef302", null ],
     [ "FindJsonChannelConfig", "classc___input_mgr.html#ae5f525a3c62f1d51057334394021717d", null ],
     [ "GetConfig", "classc___input_mgr.html#ad480f137ea3c796c0459e612ff4a0e5b", null ],
     [ "GetDriverName", "classc___input_mgr.html#a1298895cefe2fca37cc9f0dd92341610", null ],
@@ -42,6 +43,7 @@ var classc___input_mgr =
     [ "ProcessJsonChannelConfig", "classc___input_mgr.html#ab06c887245d171d80438fb33b1dbf206", null ],
     [ "ProcessJsonConfig", "classc___input_mgr.html#a3982db8dd97b38f17ec31c73e6b4940b", null ],
     [ "RestartBlankTimer", "classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71", null ],
+    [ "RestartDmxOutputTimer", "classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9", null ],
     [ "ScheduleLoadConfig", "classc___input_mgr.html#a47a66106086819f5c9edf6c94df9adc5", null ],
     [ "SetBufferInfo", "classc___input_mgr.html#a795c7c292277523fefb8363d2f8285e8", null ],
     [ "SetConfig", "classc___input_mgr.html#ad4675e93879f00d2d783470e1bc8309d", null ],
@@ -51,6 +53,9 @@ var classc___input_mgr =
     [ "ConfigFileName", "classc___input_mgr.html#a03416a2785bf7a2cdcd464eaf55a3ff4", null ],
     [ "configInProgress", "classc___input_mgr.html#adf546839c7f7aa002620aa0b5780e186", null ],
     [ "ConfigLoadNeeded", "classc___input_mgr.html#a1243cec64982dbae6c3676db03bbfb5e", null ],
+    [ "DmxEnablePin", "classc___input_mgr.html#a343cb8d620ff944c6d9bfbaea1658fcc", null ],
+    [ "DmxOutputActive", "classc___input_mgr.html#a6bb3d24989f7037ea217644e5521193e", null ],
+    [ "DmxOutputEndTimer", "classc___input_mgr.html#adeb28e0f03dfa98f542d7e61626029e5", null ],
     [ "EffectEngineIsConfiguredToRun", "classc___input_mgr.html#ad0133347ca029d6e96ba7c0281a3444d", null ],
     [ "ExternalInput", "classc___input_mgr.html#abd6bae2d43bbdaa960a184b1d679a1fa", null ],
     [ "HasBeenInitialized", "classc___input_mgr.html#a06884a1c4e8cd393c45e1049f586b259", null ],
@@ -59,7 +64,6 @@ var classc___input_mgr =
     [ "IsConnected", "classc___input_mgr.html#a7dec5704135732cd641ff5671ac83b16", null ],
     [ "LastTickerTimeStampMS", "classc___input_mgr.html#ac6ce42fbab2f848ff825fd77e39af2c8", null ],
     [ "MsTicker", "classc___input_mgr.html#a3be38776a8a8ac6eb6f6027373735ba9", null ],
-    [ "OutputsPaused", "classc___input_mgr.html#ac7e4ed3d7806210c06cf4afaacd54a02", null ],
     [ "PauseProcessing", "classc___input_mgr.html#a8ed3d7827a0d0b37b80611b286a79bec", null ],
     [ "rebootNeeded", "classc___input_mgr.html#a3f7851b54dc34c8a9eb6dd7767589540", null ]
 ];
