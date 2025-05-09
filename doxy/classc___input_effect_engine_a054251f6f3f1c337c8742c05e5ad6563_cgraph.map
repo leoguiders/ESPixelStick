@@ -1,29 +1,24 @@
 <map id="c_InputEffectEngine::Poll" name="c_InputEffectEngine::Poll">
-<area shape="rect" id="Node000001" title="Call from loop(), renders Input data." alt="" coords="5,135,142,176"/>
-<area shape="rect" id="Node000002" href="$classc___input_common.html#ac3751b26171be9a48861c73d8d4a5fe3" title=" " alt="" coords="190,5,420,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="90,133,132,90,159,67,188,48,220,34,222,39,191,53,162,71,136,94,94,136"/>
-<area shape="rect" id="Node000003" href="$class_fast_timer.html#a405ba0c8e0b6b111326da0e5588342b1" title=" " alt="" coords="478,59,617,84"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="104,132,143,110,189,92,260,76,332,68,462,64,462,70,333,73,261,81,190,97,145,115,106,137"/>
-<area shape="rect" id="Node000004" href="$classc___input_effect_engine.html#a3986476ec33d9e3aedde9c1ae3953d61" title=" " alt="" coords="237,106,373,146"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="142,144,221,134,222,139,143,150"/>
-<area shape="rect" id="Node000010" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="474,227,621,252"/>
-<area shape="poly" id="edge15_Node000001_Node000010" title=" " alt="" coords="142,162,272,180,421,206,482,220,480,225,419,211,271,186,142,167"/>
-<area shape="rect" id="Node000011" href="$classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71" title=" " alt="" coords="221,220,388,261"/>
-<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="125,174,191,200,227,213,225,218,189,205,123,179"/>
-<area shape="rect" id="Node000012" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="205,286,404,326"/>
-<area shape="poly" id="edge13_Node000001_Node000012" title=" " alt="" coords="92,174,133,223,161,249,191,271,203,277,200,281,188,275,157,253,129,227,88,178"/>
-<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="372,108,472,86,473,91,374,114"/>
-<area shape="rect" id="Node000005" href="$class_fast_timer.html#acd3946e3c51632727ad0a4eef47563e7" title=" " alt="" coords="468,112,627,138"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="373,123,452,123,452,128,373,128"/>
-<area shape="rect" id="Node000006" href="$classc___input_effect_engine.html#af6c8141b2b5d63e69151cb0f07fe9281" title=" " alt="" coords="480,162,616,202"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="374,139,465,160,464,166,372,144"/>
-<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="375,141,421,163,437,175,446,188,455,200,469,212,480,218,478,222,467,216,451,204,442,191,433,179,419,167,372,146"/>
-<area shape="rect" id="Node000007" href="$classc___input_effect_engine.html#aff4693217ee5e68868068613b318a281" title=" " alt="" coords="675,162,812,202"/>
-<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="616,180,660,180,660,185,616,185"/>
-<area shape="rect" id="Node000008" href="$classc___input_effect_engine.html#a4faf62f24ce641ec7999f5e246eb458c" title=" " alt="" coords="860,162,996,202"/>
-<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="812,180,844,180,844,185,812,185"/>
-<area shape="rect" id="Node000009" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="1044,169,1250,195"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="997,180,1028,180,1028,185,997,185"/>
-<area shape="poly" id="edge12_Node000011_Node000010" title=" " alt="" coords="389,238,458,237,458,243,389,243"/>
-<area shape="poly" id="edge14_Node000012_Node000010" title=" " alt="" coords="381,283,482,254,484,260,382,288"/>
+<area shape="rect" id="Node000001" title="Call from loop(), renders Input data." alt="" coords="5,84,142,125"/>
+<area shape="rect" id="Node000002" href="$class_fast_timer.html#a405ba0c8e0b6b111326da0e5588342b1" title=" " alt="" coords="447,5,586,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,82,143,59,189,41,251,27,315,18,431,13,432,18,316,23,252,32,190,46,146,64,107,86"/>
+<area shape="rect" id="Node000003" href="$classc___input_effect_engine.html#a3986476ec33d9e3aedde9c1ae3953d61" title=" " alt="" coords="221,55,358,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,93,205,84,206,89,143,98"/>
+<area shape="rect" id="Node000009" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="443,169,590,195"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="143,113,389,156,431,163,430,169,389,161,142,119"/>
+<area shape="rect" id="Node000010" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="190,170,389,210"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="127,123,191,149,221,161,219,166,189,154,125,128"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="357,56,447,33,448,38,359,61"/>
+<area shape="rect" id="Node000004" href="$class_fast_timer.html#acd3946e3c51632727ad0a4eef47563e7" title=" " alt="" coords="437,55,596,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,70,421,68,421,74,358,76"/>
+<area shape="rect" id="Node000005" href="$classc___input_effect_engine.html#af6c8141b2b5d63e69151cb0f07fe9281" title=" " alt="" coords="448,104,585,145"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="359,88,434,104,433,109,358,93"/>
+<area shape="poly" id="edge9_Node000003_Node000009" title=" " alt="" coords="355,94,391,112,415,134,424,144,438,155,451,161,448,166,436,159,421,148,411,138,387,116,352,99"/>
+<area shape="rect" id="Node000006" href="$classc___input_effect_engine.html#aff4693217ee5e68868068613b318a281" title=" " alt="" coords="644,104,781,145"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="585,122,629,122,629,128,585,128"/>
+<area shape="rect" id="Node000007" href="$classc___input_effect_engine.html#a4faf62f24ce641ec7999f5e246eb458c" title=" " alt="" coords="829,104,965,145"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="781,122,813,122,813,128,781,128"/>
+<area shape="rect" id="Node000008" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="1013,112,1219,138"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="966,122,997,122,997,128,966,128"/>
+<area shape="poly" id="edge11_Node000010_Node000009" title=" " alt="" coords="389,184,427,183,428,188,389,189"/>
 </map>

@@ -19,8 +19,7 @@ var searchData=
   ['reset_16',['reset',['../classc___wi_fi_driver.html#a73ac32c8db2b76fe03893dde2a2ad134',1,'c_WiFiDriver']]],
   ['resetgpio_17',['ResetGpio',['../_e_s_pixel_stick_8h.html#a97937ae3377e427d21b29966a14e964a',1,'ESPixelStick.h']]],
   ['resetsdcard_18',['ResetSdCard',['../classc___file_mgr.html#abf9680ad0d546bd42476f6460e387ba0',1,'c_FileMgr']]],
-  ['restartblanktimer_19',['RestartBlankTimer',['../classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71',1,'c_InputMgr']]],
-  ['restartdmxoutputtimer_20',['RestartDmxOutputTimer',['../classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9',1,'c_InputMgr']]],
-  ['restoreserialportoperation_21',['RestoreSerialPortOperation',['../classc___output_uart.html#a4a957a10495a41bc1ff8f469be391e04',1,'c_OutputUart']]],
-  ['rgb2hsv_22',['rgb2hsv',['../classc___input_effect_engine.html#a6751a5a67dd911744b80574029cac95c',1,'c_InputEffectEngine']]]
+  ['restartdmxoutputtimer_19',['RestartDmxOutputTimer',['../classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9',1,'c_InputMgr']]],
+  ['restoreserialportoperation_20',['RestoreSerialPortOperation',['../classc___output_uart.html#a4a957a10495a41bc1ff8f469be391e04',1,'c_OutputUart']]],
+  ['rgb2hsv_21',['rgb2hsv',['../classc___input_effect_engine.html#a6751a5a67dd911744b80574029cac95c',1,'c_InputEffectEngine']]]
 ];

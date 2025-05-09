@@ -1,16 +1,11 @@
 <map id="c_InputDDP::ProcessReceivedUdpPacket" name="c_InputDDP::ProcessReceivedUdpPacket">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,205,129"/>
-<area shape="rect" id="Node000002" href="$classc___input_d_d_p.html#a47417df395fb4998423f6406af926daa" title=" " alt="" coords="253,96,479,122"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,106,237,106,237,112,205,112"/>
-<area shape="rect" id="Node000003" href="$classc___input_common.html#ac3751b26171be9a48861c73d8d4a5fe3" title=" " alt="" coords="527,5,757,31"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="394,93,454,67,526,41,556,33,558,38,528,46,456,72,397,98"/>
-<area shape="rect" id="Node000004" href="$classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71" title=" " alt="" coords="558,55,726,96"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="477,93,543,85,543,90,478,98"/>
-<area shape="rect" id="Node000006" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="542,120,742,161"/>
-<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="480,119,527,125,527,130,479,125"/>
-<area shape="rect" id="Node000007" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="539,185,745,211"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="397,120,457,145,528,170,558,179,556,184,526,175,455,150,395,125"/>
-<area shape="rect" id="Node000005" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="805,96,953,122"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="726,85,790,94,789,99,726,90"/>
-<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="742,125,789,118,790,123,743,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,205,75"/>
+<area shape="rect" id="Node000002" href="$classc___input_d_d_p.html#a47417df395fb4998423f6406af926daa" title=" " alt="" coords="253,42,479,68"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="205,52,237,52,237,58,205,58"/>
+<area shape="rect" id="Node000003" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="530,5,730,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="479,40,515,36,515,41,480,45"/>
+<area shape="rect" id="Node000005" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="527,70,733,96"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="480,64,511,68,511,73,479,70"/>
+<area shape="rect" id="Node000004" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="781,13,929,38"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="730,23,766,23,766,28,730,28"/>
 </map>

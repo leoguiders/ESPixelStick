@@ -1,14 +1,9 @@
 <map id="c_InputDDP::ProcessReceivedData" name="c_InputDDP::ProcessReceivedData">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,96,232,122"/>
-<area shape="rect" id="Node000002" href="$classc___input_common.html#ac3751b26171be9a48861c73d8d4a5fe3" title=" " alt="" coords="280,5,510,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,93,207,67,279,41,309,33,310,38,280,46,209,72,149,98"/>
-<area shape="rect" id="Node000003" href="$classc___input_mgr.html#ac50551f90f209dbaa2b476a20b524b71" title=" " alt="" coords="311,55,478,96"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="230,93,295,85,296,90,231,98"/>
-<area shape="rect" id="Node000005" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="295,120,494,161"/>
-<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="233,119,280,125,279,130,232,125"/>
-<area shape="rect" id="Node000006" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="292,185,498,211"/>
-<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="150,120,209,145,280,170,310,179,309,184,279,175,208,150,148,125"/>
-<area shape="rect" id="Node000004" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="558,96,705,122"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="479,85,543,94,542,99,478,90"/>
-<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="495,125,542,118,543,123,495,130"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,42,232,68"/>
+<area shape="rect" id="Node000002" href="$classc___input_mgr.html#affda9cf57220ac433a3a7ac2119724e9" title=" " alt="" coords="283,5,482,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="232,40,267,36,268,41,233,45"/>
+<area shape="rect" id="Node000004" href="$classc___output_mgr.html#abe0292b6380f75279c4758c2b2e4e465" title=" " alt="" coords="280,70,486,96"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="233,64,264,68,264,73,232,70"/>
+<area shape="rect" id="Node000003" href="$class_fast_timer.html#a775ab52aa49e9a1f7092eefcbdbd673e" title="&lt; Start the module" alt="" coords="534,13,681,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="483,23,519,23,519,28,483,28"/>
 </map>
