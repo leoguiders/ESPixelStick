@@ -53,7 +53,7 @@ var classc___input_mgr =
     [ "ConfigFileName", "classc___input_mgr.html#a03416a2785bf7a2cdcd464eaf55a3ff4", null ],
     [ "configInProgress", "classc___input_mgr.html#adf546839c7f7aa002620aa0b5780e186", null ],
     [ "ConfigLoadNeeded", "classc___input_mgr.html#a1243cec64982dbae6c3676db03bbfb5e", null ],
-    [ "DmxEnablePin", "classc___input_mgr.html#a343cb8d620ff944c6d9bfbaea1658fcc", null ],
+    [ "DmxEnablePin", "classc___input_mgr.html#a636f9f3549705aebbfb16599acc475a2", null ],
     [ "DmxOutputActive", "classc___input_mgr.html#a6bb3d24989f7037ea217644e5521193e", null ],
     [ "DmxOutputEndTimer", "classc___input_mgr.html#adeb28e0f03dfa98f542d7e61626029e5", null ],
     [ "EffectEngineIsConfiguredToRun", "classc___input_mgr.html#ad0133347ca029d6e96ba7c0281a3444d", null ],
