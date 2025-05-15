@@ -235,6 +235,7 @@ bool fsm_PlayFile_state_PlayingFile::Poll ()
         }
         // DEBUG_V();
         InputMgr.RestartBlankTimer (p_Parent->GetInputChannelId ());
+        InputMgr.RestartDmxOutputTimer();
 
     } while (false);
 

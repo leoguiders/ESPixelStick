@@ -164,6 +164,7 @@ void c_InputArtnet::onDmxFrame (uint16_t  CurrentUniverseId,
                min(CurrentUniverse.BytesToCopy, length));
 */
         InputMgr.RestartBlankTimer (GetInputChannelId ());
+        InputMgr.RestartDmxOutputTimer();
     }
     else
     {

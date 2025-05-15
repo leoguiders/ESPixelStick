@@ -360,6 +360,7 @@ void c_InputEffectEngine::Process ()
         EffectDelayTimer.StartTimer(EffectWait);
         EffectCounter++;
         InputMgr.RestartBlankTimer (GetInputChannelId ());
+        InputMgr.RestartDmxOutputTimer();
 
         PollFlash();
 

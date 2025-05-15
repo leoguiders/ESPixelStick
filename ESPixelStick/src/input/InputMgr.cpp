@@ -126,6 +126,10 @@ void c_InputMgr::Begin (uint32_t BufferSize)
         InstantiateNewInputChannel(e_InputChannelIds(CurrentInput.DriverId), e_InputType::InputType_Disabled);
         // DEBUG_V ("");
     }
+    
+    // initialize dmx pin
+    pinMode(DmxEnablePin, OUTPUT);
+    
     HasBeenInitialized = true;
 
     // load up the configuration from the saved file. This also starts the drivers
@@ -696,6 +700,23 @@ void c_InputMgr::Process ()
             OutputMgr.ClearBuffer ();
             RestartBlankTimer (InputSecondaryChannelId);
         } // ALL blank timers have expired
+
+        bool aDmxOutputTimerIsRunning = false;
+        for (auto & CurrentInput : InputChannelDrivers)
+        {
+            if(nullptr == CurrentInput.pInputChannelDriver || aDmxOutputTimerIsRunning)
+            {
+                continue;
+            }
+
+            aDmxOutputTimerIsRunning = !DmxOutputTimerHasExpired();
+        }
+
+        if (false == aDmxOutputTimerIsRunning && DmxOutputActive)
+        {
+            DmxOutputActive = false;
+            digitalWrite(DmxEnablePin, LOW);
+        }
 
         if (rebootNeeded)
         {

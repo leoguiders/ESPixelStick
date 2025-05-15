@@ -62,6 +62,17 @@ public:
     void GetDriverName        (String & Name) { Name = "InputMgr"; }
     void RestartBlankTimer    (e_InputChannelIds Selector) { BlankEndTime[int(Selector)].StartTimer(config.BlankDelay * 1000); }
     bool BlankTimerHasExpired (e_InputChannelIds Selector) { return (BlankEndTime[int(Selector)].IsExpired()); }
+    void RestartDmxOutputTimer() 
+    { 
+        DmxOutputEndTimer.StartTimer(5000);
+
+        if (DmxOutputActive)
+            return;
+
+        DmxOutputActive = true;
+        digitalWrite(DmxEnablePin, HIGH);
+    }
+    bool DmxOutputTimerHasExpired () { return (DmxOutputEndTimer.IsExpired()); }
     void ProcessButtonActions (c_ExternalInput::InputValue_t value);
 
     enum e_InputType
@@ -112,6 +123,10 @@ private:
     bool   rebootNeeded = false;
 
     FastTimer BlankEndTime[InputChannelId_End];
+    FastTimer DmxOutputEndTimer;
+
+    bool DmxOutputActive = false;
+    const gpio_num_t DmxEnablePin = GPIO_NUM_0;
 
 #define IM_JSON_SIZE (5 * 1024)
 
