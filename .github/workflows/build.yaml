@@ -1,7 +1,7 @@
 name: ESPixelStick CI v4.0-beta5
 on: [push, pull_request, workflow_dispatch]
 env:
-  VERSION_BASE: '4.0'
+  VERSION_BASE: "4.0"
 jobs:
   firmware:
     strategy:
@@ -91,7 +91,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout ESPixelStick
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Create version file
         run: |
@@ -104,7 +104,7 @@ jobs:
           echo "${GITHUB_REF#refs/*/v}" > firmware/VERSION
 
       - name: Cache pip
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.cache/pip
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -112,15 +112,15 @@ jobs:
             ${{ runner.os }}-pip-
 
       - name: Cache PlatformIO
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ~/.platformio
           key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install PlatformIO
         run: |
@@ -140,13 +140,13 @@ jobs:
       - name: Upload Firmware Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Firmware Binaries
+          name: firmware-binary-${{ matrix.target }}
           path: firmware
 
       - name: Upload Debugging Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: Debug Files
+          name: firmware-debug-${{ matrix.target }}
           path: debug
 
   package:
@@ -154,7 +154,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Checkout ESPixelStick
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set release flag
         if: startsWith(github.ref, 'refs/tags/v')
@@ -162,15 +162,16 @@ jobs:
           echo "ESPS_RELEASE=''" >> $GITHUB_ENV
 
       # Download firmware binary artifact
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
         with:
-          name: Firmware Binaries
           path: dist/firmware
+          pattern: firmware-binary-*
+          merge-multiple: true
 
       # Install Node
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: "20"
       - run: npm install
 
       # Build and move the web pages
@@ -207,7 +208,7 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/v')
     steps:
       - name: Download Package
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: Release Archive
       - name: Create Draft Release
