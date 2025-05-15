@@ -1,4 +1,4 @@
-name: ESPixelStick CI
+name: ESPixelStick CI v4.0-beta5
 on: [push, pull_request, workflow_dispatch]
 env:
   VERSION_BASE: '4.0'
