@@ -714,6 +714,7 @@ void c_InputMgr::Process ()
 
         if (false == aDmxOutputTimerIsRunning && DmxOutputActive)
         {
+            logcon (String (F ("Deactivating DMX Output")));
             DmxOutputActive = false;
             digitalWrite(DmxEnablePin, LOW);
         }

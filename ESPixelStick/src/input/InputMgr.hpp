@@ -69,6 +69,7 @@ public:
         if (DmxOutputActive)
             return;
 
+        logcon (String (F ("Activating DMX Output")));
         DmxOutputActive = true;
         digitalWrite(DmxEnablePin, HIGH);
     }
