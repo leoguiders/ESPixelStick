@@ -68,6 +68,7 @@ typedef struct {
     // Device
     String      id;
     time_t      BlankDelay = time_t(5);
+    time_t      DmxOutputDelay = time_t(60);
 } config_t;
 
 String  serializeCore          (bool pretty = false);

@@ -135,6 +135,7 @@ void setup()
 #endif // def DEBUG_GPIO
 
     config.BlankDelay = 5;
+    config.DmxOutputDelay = 60;
 #ifdef ARDUINO_ARCH_ESP32
     // disable brownout detector
     WRITE_PERI_REG(RTC_CNTL_BROWN_OUT_REG, 0);
@@ -251,6 +252,7 @@ bool dsDevice(JsonObject & json)
 //TODO: Add configuration upgrade handling - cfgver moved to root level
         ConfigChanged |= setFromJSON (config.id,         JsonDeviceConfig, CN_id);
         ConfigChanged |= setFromJSON (config.BlankDelay, JsonDeviceConfig, CN_blanktime);
+        ConfigChanged |= setFromJSON (config.DmxOutputDelay, JsonDeviceConfig, CN_dmxtime);
     }
     else
     {
@@ -415,6 +417,7 @@ void GetConfig (JsonObject & json)
     JsonObject device       = json.createNestedObject(CN_device);
     device[CN_id]           = config.id;
     device[CN_blanktime]    = config.BlankDelay;
+    device[CN_dmxtime]      = config.DmxOutputDelay;
 
     FileMgr.GetConfig (device);
 

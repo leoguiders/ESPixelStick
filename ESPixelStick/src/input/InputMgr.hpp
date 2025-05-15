@@ -64,7 +64,8 @@ public:
     bool BlankTimerHasExpired (e_InputChannelIds Selector) { return (BlankEndTime[int(Selector)].IsExpired()); }
     void RestartDmxOutputTimer() 
     { 
-        DmxOutputEndTimer.StartTimer(5000);
+        // set output timer to 60 seconds
+        DmxOutputEndTimer.StartTimer(60 * 1000);
 
         if (DmxOutputActive)
             return;

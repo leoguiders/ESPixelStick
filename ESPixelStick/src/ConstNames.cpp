@@ -37,6 +37,7 @@ const CN_PROGMEM char CN_b                        [] = "b";
 const CN_PROGMEM char CN_b16                      [] = "b16";
 const CN_PROGMEM char CN_baudrate                 [] = "baudrate";
 const CN_PROGMEM char CN_blanktime                [] = "blanktime";
+const CN_PROGMEM char CN_dmxtime                  [] = "dmxtime";
 const CN_PROGMEM char CN_bridge                   [] = "bridge";
 const CN_PROGMEM char CN_brightness               [] = "brightness";
 const CN_PROGMEM char CN_brightnessEnd            [] = "brightnessEnd";
